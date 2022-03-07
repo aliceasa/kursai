@@ -1,0 +1,21 @@
+body {
+  background: green;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+div {
+  width: 50vw;
+  height: 50vw;
+  font-size: 16px;
+}
+
+.first {
+  background: rgba(255, 255, 0);
+  font-family: "Times", Arial, sans-serif;
+}
+.second {
+  background: #ff0000;
+}
+.third {
+  background: blue;
+}
