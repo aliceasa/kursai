@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chromas</title>
+  </head>
+  <body>
+    <div class="pagrindinis-divas">
+      <div class="red-divas"></div>
+      <div class="blue-divas"></div>
+      <div class="green-divas"></div>
+      <div class="grey-divas"></div>
+      <div class="yellow-divas"></div>
+    </div>
+  </body>
+  <style>
+    .pagrindinis-divas {
+      display: flex;
+      flex-wrap: wrap;
+      width: 450px;
+      height: 450px;
+      border: 5px solid black;
+    }
+    .red-divas {
+      box-sizing: border-box;
+      height: 150px;
+      width: 300px;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+      background-color: red;
+    }
+    .blue-divas {
+      box-sizing: border-box;
+      height: 300px;
+      width: 150px;
+      background-color: blue;
+    }
+    .green-divas {
+      position: relative;
+      top: -150px;
+      box-sizing: border-box;
+      background: green;
+      height: 300px;
+      width: 150px;
+      border-right: 5px solid black;
+    }
+    .grey-divas {
+      position: relative;
+      top: -150px;
+      background: grey;
+      height: 150px;
+      width: 150px;
+      box-sizing: border-box;
+      border-right: 5px solid black;
+    }
+    .yellow-divas {
+      position: relative;
+      top: -300px;
+      right: -150px;
+      background: yellow;
+      height: 150px;
+      width: 300px;
+      box-sizing: border-box;
+      border-top:5px solid black ;
+    }
+  </style>
+</html>
