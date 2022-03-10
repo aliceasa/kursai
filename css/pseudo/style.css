@@ -2,7 +2,7 @@
 .staciakampis {
   width: 50px;
   height: 50px;
-  background: green;
+  background: red;
   margin-bottom: 20px;
   border: 2px;
   color: black;
@@ -14,4 +14,26 @@
   margin-bottom: 20px;
   border: 2px;
   color: black;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+input:nth-of-type(1) {
+  background-color: yellow;
+  
+}
+input:nth-of-type(2){
+  background-color: green;
+}
+input:nth-of-type(3) {
+  background-color: red;
+}
+.veliava{
+  display:flex;
+  flex-direction: column;
+  width: 100px;
+  
 }
