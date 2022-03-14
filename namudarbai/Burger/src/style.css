@@ -1,0 +1,176 @@
+body {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+}
+
+.background-image-yellow {
+  background: url("../assets/Rectangle.svg");
+  height: 100%;
+  padding: 55px;
+  box-sizing: border-box;
+}
+
+.heading-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+}
+
+.delivery p {
+  margin-left: 10px;
+  font-size: 17px;
+  line-height: 71px;
+  color: #3d2514;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 21px;
+  letter-spacing: 4px;
+  padding-left: 50px;
+}
+
+.main-info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-front-page-left-side p {
+  display: inline-block;
+  padding: 5px;
+  border: 3px dashed black;
+}
+
+.heading-front-page-left-side h1 {
+  font-size: 114px;
+  line-height: 62px;
+  color: #3d2514;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.heading-front-page-left-side h2 {
+  margin-top: 20px;
+  font-size: 60px;
+  line-height: 62px;
+  color: #3d2514;
+  font-weight: 400;
+}
+
+.heading-front-page-right-side {
+  position: relative;
+}
+
+.red-dot-container {
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.red-dot-dashed {
+  text-align: center;
+  border: 2px dashed white;
+  color: white;
+  position: relative;
+  top: 9px;
+  left: 9px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border-radius: 100%;
+}
+
+.red-dot-dashed > span {
+  padding-top: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  line-height: 38px;
+  font-size: 40px;
+}
+
+.red-dot-dashed > span > p {
+  margin-top: 33px;
+  font-size: 20px;
+}
+
+.red-dot-dashed > span > p > span {
+  font-size: 40px;
+}
+
+.second-window {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 200px);
+  margin: 100px;
+}
+
+.second-window-right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-window p {
+  margin: 0;
+
+  font-size: 35px;
+  color: white;
+}
+
+.second-window-left-side {
+  height: 420px;
+  width: 596px;
+  background-image: url(../assets//burger-onion.png);
+}
+
+.upper-div {
+  margin-bottom: 40px;
+  height: 192px;
+  width: 596px;
+  background-image: url(../assets/upper-img.png);
+}
+
+.second-window-left-side p,
+.upper-div p,
+.lower-div p {
+  margin: 20px;
+}
+
+.lower-div {
+  height: 192px;
+  width: 596px;
+  background-image: url(../assets/lower-div.png);
+}
+
+.upper-div p:first-of-type {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.upper-div p:first-of-type {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lower-div p:first-of-type {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
