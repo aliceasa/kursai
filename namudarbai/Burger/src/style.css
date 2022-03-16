@@ -174,3 +174,46 @@ nav a {
   font-size: 20px;
   margin-bottom: 10px;
 }
+.Always-tasty-burgers {
+  width: 200px;
+  height: 40px;
+  background-color: #ffc045;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  padding-top: 15px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+.choose-enjoy {
+  font-size: 50px;
+  line-height: 38px;
+  color: #3d2514;
+  font-weight: 400;
+  font-family: "Alfa Slab One";
+  text-align: center;
+}
+.description {
+  text-align: center;
+  font-size: 17px;
+  line-height: 29px;
+  color: #3d2514;
+  font-family: "Montserrat";
+  width: 1070px;
+  height: 51px;
+  margin: 0 auto;
+}
+.burger-card {
+  width: 367px;
+  text-align: center;
+}
+.burger-card button {
+  width: 195px;
+  height: 57px;
+  background-color: #bf2222;
+  font-size: 27px;
+  color: white;
+}
+.Three-burgers {
+  display: flex;
+  justify-content: space-around;
+}
