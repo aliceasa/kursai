@@ -205,8 +205,12 @@ nav a {
 .burger-card {
   width: 367px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .burger-card button {
+  margin: 0 auto;
   width: 195px;
   height: 57px;
   background-color: #bf2222;
@@ -216,4 +220,199 @@ nav a {
 .Three-burgers {
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
+}
+.discover {
+  display: flex;
+  position: relative;
+  margin: 0 100px;
+  margin-top: 160px;
+  -webkit-box-shadow: 3px 6px 15px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 3px 6px 15px 0px rgba(0, 0, 0, 0.55);
+}
+.discover-left-side {
+  padding: 30px;
+  width: 50%;
+}
+
+.discover-left-side span {
+  font-size: 29px;
+  letter-spacing: 2px;
+  line-height: 46px;
+  color: #3d3d3d;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+}
+
+.discover-left-side h2 {
+  font-size: 42px;
+  line-height: 46px;
+  color: #3d2514;
+  font-weight: 400;
+  font-family: "Alfa Slab One";
+}
+
+.discover-left-side p {
+  font-size: 21px;
+  line-height: 33px;
+  color: #3d3d3d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.discover-right-side {
+  width: 50%;
+}
+.discover-right-side img {
+  margin: 30px;
+  width: calc(100% - 60px);
+}
+
+.bubbles {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.bubbles div {
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: #dcdcdc;
+  border-radius: 100%;
+}
+
+.bubbles div:first-of-type {
+  background-color: #ffc045;
+}
+
+.input-fields {
+  text-align: center;
+}
+
+.input-fields p {
+  font-size: 29px;
+  letter-spacing: 2px;
+  line-height: 46px;
+  color: #3d2514;
+  font-weight: 700;
+}
+
+.input-fields h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 46px;
+  color: #3d2514;
+  font-weight: 400;
+  font-family: "Alfa Slab One";
+}
+
+.fields {
+  position: relative;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.fields input,
+.fields button {
+  box-sizing: border-box;
+  width: calc(49% - 20px);
+  margin: 10px;
+  padding: 10px;
+}
+
+.fields button {
+  background-color: #bf2222;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Alfa Slab One";
+  cursor: pointer;
+  border: 0;
+}
+
+.fields img {
+  position: absolute;
+}
+
+.fields img:first-of-type {
+  top: -50px;
+  left: -200px;
+}
+
+.fields img:nth-of-type(2) {
+  top: -200px;
+  left: -400px;
+}
+
+.fields img:last-of-type {
+  top: -100px;
+  right: -620px;
+}
+
+.last-section {
+  display: flex;
+  position: relative;
+  background-image: url(../assets/padeklas.png);
+  margin: 200px 150px 0 150px;
+  height: 525px;
+  background-repeat: no-repeat;
+}
+
+.last-section img {
+  margin: 50px 25px;
+}
+
+.last-section p {
+  width: 520px;
+  height: 106px;
+  margin-left: 25px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.last-section span {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Bebas Neue";
+}
+
+.last-left-side {
+  width: 60%;
+}
+.last-right-side {
+  margin-top: 20%;
+  width: 50%;
+}
+
+.last-right-side p {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.last-right-side img {
+  margin: 0;
+  padding: 0;
+}
+
+.last-right-side div {
+  margin-left: 100px;
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+}
+
+.instagram {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
 }
