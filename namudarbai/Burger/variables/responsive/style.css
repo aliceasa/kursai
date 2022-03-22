@@ -1,0 +1,22 @@
+div {
+  width: 150px;
+  height: 150px;
+  margin: 12px;
+  background: red;
+}
+@media (min-width: 768px) {
+  div {
+    background: yellowgreen;
+  }
+  div:nth-of-type(2) {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  div {
+    background: green;
+  }
+  div:nth-of-type(2) {
+    display: block;
+  }
+}
