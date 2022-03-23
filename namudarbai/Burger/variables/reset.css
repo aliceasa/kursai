@@ -1,5 +1,5 @@
 :root {
-  --background: green;
+  --background: white;
 }
 body {
   background: var(--background);

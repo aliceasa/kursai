@@ -1,0 +1,55 @@
+header {
+  box-shadow: 0 0 3px 0 #333;
+  padding: 24px;
+  width: 100%;
+}
+
+menu {
+  position: relative;
+}
+nav {
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+}
+
+button: :focus nav {
+  visibility: visible;
+}
+
+button {
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  padding: 12px 6px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+nav {
+  position: relative;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  svg {
+    display: none;
+  }
+}
+ul {
+  flex-direction: row;
+}

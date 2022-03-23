@@ -6,7 +6,7 @@ div {
 }
 @media (min-width: 768px) {
   div {
-    background: yellowgreen;
+    background: white;
   }
   div:nth-of-type(2) {
     display: none;
@@ -14,7 +14,7 @@ div {
 }
 @media (min-width: 1024px) {
   div {
-    background: green;
+    background: white;
   }
   div:nth-of-type(2) {
     display: block;
