@@ -1,31 +1,47 @@
+/* DESKTOP */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 nav {
   margin: auto;
-  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.tablet-menu {
+  display: none;
+}
+
 a {
   color: black;
   text-decoration: none;
   margin-left: 35px;
 }
-button:nth-of-type(2) {
+
+nav button:nth-of-type(2) {
   width: 145px;
   height: 40px;
   border-radius: 5px;
   background-color: #ffcc01;
   margin-right: 55px;
 }
-button:first-of-type {
+
+nav button:first-of-type {
   border: 0;
   background: none;
 }
+
 .first {
   width: 1200px;
   margin: 0 auto;
   position: relative;
 }
+
 .blue-square {
   width: 960px;
   height: 630px;
@@ -35,16 +51,44 @@ button:first-of-type {
   right: 0;
 }
 .yellow-rectangle {
+  display: flex;
   width: 590px;
   height: 80px;
   background-color: #ffcc01;
   position: absolute;
   right: 0;
   bottom: 0;
+  justify-content: space-around;
 }
+
+.yellow-rectangle img {
+  height: 20px;
+  padding-right: 20px;
+}
+
+.yellow-rectangle .phone,
+.yellow-rectangle .location {
+  display: flex;
+  align-items: center;
+}
+
 .first-text {
   position: absolute;
   z-index: 1;
+}
+
+.first-text input {
+  padding: 20px;
+  outline: none;
+  margin: 0;
+  border: 0;
+  width: 300px;
+}
+
+.first-text button {
+  padding: 20px;
+  width: 140px;
+  background: #ffcc01;
 }
 
 .first-text h1 {
@@ -56,4 +100,301 @@ button:first-of-type {
   font-weight: 600;
   font-family: "Montserrat";
   margin-top: 200px;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.statistics {
+  display: flex;
+  margin-top: 800px;
+}
+
+.statistics-left-side {
+  flex: 1;
+}
+
+.statistics-left-side h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #1f373d;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.statistics-left-side p {
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #1f373d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.statistics-right-side {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  flex: 0.9;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.statistics-right-side .box {
+  width: 200px;
+  margin: 10px;
+  height: 200px;
+  background-color: #f6f5f4;
+  text-align: center;
+}
+
+.statistics-right-side .box h3 {
+  color: #ffcc01;
+  font-size: 30px;
+}
+
+.appartaments-for-rent {
+  background-color: #f6f5f4;
+}
+
+.appartaments-for-rent h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #1f373d;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.appartaments-for-rent-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.appartaments-for-rent-boxes {
+  background-color: white;
+  margin: 20px;
+  width: calc(300px - 40px);
+}
+
+.appartaments-for-rent-boxes .div-like-img {
+  background-color: #b1d7e8;
+  height: 200px;
+}
+
+.appartaments-for-rent-boxes p,
+.appartaments-for-rent-boxes h4 {
+  padding: 0 10px;
+}
+
+.price-and-etc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-and-etc p:first-of-type {
+  color: #ffcc01;
+}
+
+.price-and-etc p:last-of-type {
+  color: darkgrey;
+}
+
+.appartaments-for-rent .search-container form {
+  height: 50px;
+  margin-left: 60px;
+}
+
+.appartaments-for-rent .search-container form input {
+  height: 40px;
+  border: 0;
+}
+
+.appartaments-for-rent .search-container form button {
+  height: 40px;
+  background-color: #ffcc01;
+  border: 0;
+  width: 100px;
+  text-align: center;
+}
+
+.appartaments-for-rent .search-container form button:last-of-type {
+  margin-left: 80px;
+  width: 180px;
+  background-color: transparent;
+  background-color: white;
+}
+
+.works h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #1f373d;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.works p {
+  width: 361px;
+  height: 95px;
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #1f373d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.works-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.works-box {
+  width: calc(345px - 40px);
+  height: 373px;
+  margin: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.works-box:first-of-type {
+  background-color: #ffcc01;
+}
+
+.works-box h1 {
+  font-family: "Montserrat";
+  width: 132px;
+  height: 85px;
+  font-size: 120px;
+  margin: 0;
+  margin-top: -60px;
+  margin-left: -20px;
+  color: black;
+}
+
+.works-box h4,
+.works-box p {
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 30px;
+  color: black;
+}
+
+.services {
+  display: flex;
+}
+
+.div-as-image {
+  width: 40vw;
+  height: 40vw;
+  background-color: #acd1e1;
+}
+
+.right-side-of-services {
+  margin: 0 auto;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  nav {
+    justify-content: space-around;
+  }
+  .tablet-menu {
+    display: block;
+  }
+
+  .tablet-menu img {
+    height: 40px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .first-text {
+    margin-left: 40px;
+  }
+
+  .tablet-menu:focus + .links {
+    top: 50px;
+    left: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .tablet-menu:focus-within + .links {
+    top: 50px;
+    left: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  a {
+    background-color: red;
+    padding: 5px;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+
+  .statistics-left-side {
+    margin: 0 auto;
+  }
+
+  .statistics-right-side {
+    margin: 0 auto;
+  }
+
+  .box-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .div-as-image {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .statistics-left-side {
+    padding: 30px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .right-side-header-buttons {
+    display: none;
+  }
+
+  .appartaments-for-rent-box-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .appartaments-for-rent h1 {
+    padding: 40px;
+  }
 }
