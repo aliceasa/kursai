@@ -5,13 +5,20 @@ html {
 }
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
   overflow-x: hidden;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #scroll-down {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 500px;
   left: 0;
@@ -29,37 +36,61 @@ body {
 }
 
 #scroll-down img {
+  padding-top: 40px;
   transform: rotate(90deg);
 }
 
 nav {
-  margin: auto;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.tablet-menu {
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  padding: 0 15px;
+}
+
+nav button {
+  background-color: transparent;
+  padding: 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+nav button:last-of-type {
+  background-color: #ffcc01;
+}
+
+nav .mobile-burger {
   display: none;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  margin-left: 35px;
-}
+@media (max-width: 991px) {
+  nav ul {
+    display: none;
+  }
 
-nav button:nth-of-type(2) {
-  width: 145px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #ffcc01;
-  margin-right: 55px;
-}
+  nav .mobile-burger {
+    display: inline-block;
+  }
 
-nav button:first-of-type {
-  border: 0;
-  background: none;
+  nav .mobile-burger img {
+    height: 50px;
+  }
 }
 
 .first {
@@ -359,7 +390,6 @@ nav button:first-of-type {
 }
 
 .super-awesome {
-  margin: 100px 0;
   position: relative;
   display: flex;
 }
@@ -470,21 +500,6 @@ footer {
 /* TABLET */
 
 @media (max-width: 991px) {
-  nav {
-    justify-content: space-around;
-  }
-  .tablet-menu {
-    display: block;
-  }
-
-  .tablet-menu img {
-    height: 40px;
-  }
-
-  .links {
-    display: none;
-  }
-
   .first-text {
     margin-left: 40px;
   }
@@ -494,11 +509,6 @@ footer {
     background-color: red;
     z-index: 10000000;
     display: block;
-  }
-
-  a {
-    background-color: red;
-    padding: 5px;
   }
 
   .statistics {
