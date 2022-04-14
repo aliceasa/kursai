@@ -14,7 +14,7 @@ function deleteNumber() {
 }
 
 function add() {
-  numberArea.textContent = Number(numberArea.value);
+  numberArea.textContent = Number(numberArea);
   numberArea.textContent = 0;
 }
 
