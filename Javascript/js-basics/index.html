@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>paprastas mygtukas</button>
+    <button class="mygtukas-su-klase">mygtukas su klase</button>
+    <button id="mygtukas-su-id">mygtukas su id</button>
+    <button class="mygtukas-4">mygtukas 4</button>
+    <script>
+      // Tai yra mygtuko priskirimas kintamajam
+      const mygtukas = document.querySelector("button");
+      // Su klase
+      const mygtukasSuKlase = document.querySelector(".mygtukas-su-klase");
+      // Su id
+      const mygtukasSuId = document.querySelector("#mygtukas-su-id");
+      const mygtukasSuKlase4 = document.querySelector(".mygtukas-4");
+
+      console.log(mygtukasSuKlase4);
+
+      function clickedFirstBtn() {
+        alert("Mygtukas paprastas nuspaustas");
+      }
+
+      function clickedSecondBtn() {
+        alert("Antras mygtukas nuspaustas");
+      }
+
+      function clickedThirdBtn() {
+        alert("Trecias mygtukas nuspaustas");
+      }
+
+      // Tai yra mygtuko event'as, kuris paleidzia anonimine funkcija, kuri alertina paspaudus pirmaji mygtuka
+      mygtukas.addEventListener("click", () => {
+        alert("Mygtukas paprastas nuspaustas");
+      });
+
+      // Tai yra mygtuko event'as, kuris paleidzia paprasta funkcija nuspaudus pirmaji mygtuka
+      mygtukas.addEventListener("click", clickedFirstBtn);
+
+      mygtukasSuKlase.addEventListener("click", clickedSecondBtn);
+
+      mygtukasSuId.addEventListener("click", clickedThirdBtn);
+    </script>
+  </body>
+</html>
