@@ -48,3 +48,4 @@ arrayOfObjects.forEach((obj) => {
   tbody.append(tr);
   tr.append(td1, td2, td3, td4, td5);
 });
+
