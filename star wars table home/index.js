@@ -10,7 +10,7 @@ const massSuma = document.querySelector(".masssuma");
 
 // const arrayOfSymbolLengths = [];
 
-// characters.forEach((name) => {
+// characters.forEach((name) => {start wars
 //   arrayOfSymbolLengths.push(name.textContent.length);
 
 //   if (arrayOfSymbolLengths.length > 3) {
@@ -43,5 +43,15 @@ const names = [
 ];
 
 characters.forEach((item) => {
-  item.textContent = names;
+  item.textContent = names[0];
 });
+
+const people = [];
+
+fetch("https://swapi.dev/api/people")
+  .then((response) => response.json())
+  .then((data) => people.push(data.results));
+
+setTimeout(() => {
+  console.log(people[0]);
+}, 2000);
