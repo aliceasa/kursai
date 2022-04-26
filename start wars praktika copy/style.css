@@ -5,6 +5,10 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  margin-left: 100px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -14,9 +18,4 @@ table {
 td,
 th {
   border: 1px solid black;
-  padding: 5px;
-}
-
-th {
-  text-align: left;
 }
