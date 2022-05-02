@@ -14,3 +14,15 @@ function setCookie(cname, cvalue, exdays) {
 function showCookie() {
   document.write(document.cookie);
 }
+
+let mociute = 1;
+
+function buyMociute() {
+  if (i > 49) {
+    alert("Mociute nupirkta");
+    document.querySelector(".grandma").style.display = "block";
+    i = i - 50;
+    document.getElementById("inc").value = i;
+  } else {
+  }
+}
