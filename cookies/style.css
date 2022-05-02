@@ -1,0 +1,14 @@
+img {
+  height: 50px;
+}
+
+input {
+  border: 0;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
