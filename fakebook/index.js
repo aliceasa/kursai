@@ -55,6 +55,8 @@ const people = [
   },
 ];
 
+const mainContainer = document.querySelector(".main-opened-human");
+
 // Sukuriame kintamaji (angl. variable) body ir priskiriame jam musu body elementa, kuri turime html
 const body = document.querySelector("body");
 
@@ -66,7 +68,7 @@ container.classList.add("container");
 
 // Integruosime katik sukurta containeri i body
 // prepend naudojame, kai norime prideti elementa i pradzia viduje,o append - i gala viduje
-body.prepend(container);
+body.append(container);
 
 // Kiekvienam people masyvo objektui naudojime si cikla, kol nesibaigs objektai
 people.forEach((obj) => {
@@ -97,4 +99,17 @@ people.forEach((obj) => {
   const locationSpot = document.createElement("p");
   locationSpot.textContent = obj.city + ", " + obj.country;
   objectContainer.append(locationSpot);
+});
+
+const objectContainer = document.querySelectorAll(".objContainer");
+
+objectContainer.forEach((obj) => {
+  obj.addEventListener("click", () => {
+    const img = mainContainer.children[0].children[0];
+    img.src = obj.children[0].src;
+    const name = mainContainer.children[0].children[1];
+    name.textContent = obj.children[1].textContent.split(",")[0];
+    const age = mainContainer.children[0].children[2];
+    age.textContent = obj.children[2].textContent;
+  });
 });
