@@ -119,3 +119,4 @@ delBtn.forEach((btn) => {
 });
 
 console.log(delBtn);
+
